@@ -1,0 +1,9 @@
+{
+  "name": "browser-speed-test",
+  "version": "0.1.0",
+  "description": "network speed test in browser with js",
+  "main": "index.js",
+  "repository": "https://github.com/ShiverZheng/browser-speed-test.git",
+  "author": "shiverzheng",
+  "license": "MIT"
+}
