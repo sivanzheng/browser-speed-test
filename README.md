@@ -14,7 +14,7 @@ npm install browser-speed-test
     import SpeedTester from 'browser-speed-test';
     /**
      * @param {object} optional - The tester config.
-     * @param optional.url Links to resources such as downloaded images for testing.
+     * @param optional.url Url used to test network speed, link such as picture resource.
      * @param optional.testFrequency Testing frequency.
      * @param optional.onProgress The testing progress callback function.
      */
