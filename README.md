@@ -52,4 +52,4 @@ If you want to disable CROS, just comment out ```response.setHeader('Access-Cont
 
 
 
-####[click here for demo](https://shiverzheng.github.io/browser-speed-test/demo/index.html)
+[click here for demo](https://shiverzheng.github.io/browser-speed-test/demo/index.html)
