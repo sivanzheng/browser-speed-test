@@ -11,7 +11,7 @@
         ],
         "moduleResolution": "node",
         "skipLibCheck": true,
-        "types": []
+        "types": ["node"]
     },
     "include": [
         "src/**/*",

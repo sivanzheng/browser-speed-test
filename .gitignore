@@ -1,2 +1,6 @@
 lib
 node_modules
+.DS_Store
+yarn-error.log
+dist/src
+dist/demo

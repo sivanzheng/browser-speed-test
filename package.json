@@ -2,18 +2,28 @@
   "scripts": {
     "test": "npm run build && jest",
     "build": "rm -rf lib && tsc -p tsconfig.json",
-    "dev": "rm -rf lib dist && tsc -p tsconfig.dev.json && browserify ./dist/demo/index.js -o ./dist/index.js"
+    "dev": "rm -rf lib dist && tsc -p tsconfig.dev.json && browserify ./dist/demo/index.js -o ./dist/index.js",
+    "server": "npm run dev && cp demo/server/test.png dist/demo/server/test.png && node dist/demo/server/index.js"
   },
   "jest": {
     "verbose": true
   },
   "name": "browser-speed-test",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "network speed test in browser with js",
   "main": "index.js",
   "repository": "https://github.com/ShiverZheng/browser-speed-test.git",
   "author": "ShiverZheng",
   "license": "MIT",
+  "keywords": [
+    "speed test",
+    "speedTest",
+    "network ",
+    "browser",
+    "typescript",
+    "javascript",
+    "js"
+  ],
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/preset-env": "^7.12.7",
