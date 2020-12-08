@@ -1,18 +1,18 @@
 {
   "scripts": {
     "test": "npm run build && jest",
-    "build": "rm -rf lib && tsc -p tsconfig.json",
-    "dev": "rm -rf lib dist && tsc -p tsconfig.dev.json && browserify ./dist/demo/index.js -o ./dist/index.js",
+    "build": "rm -rf index.js index.d.ts && tsc -p tsconfig.json",
+    "dev": "rm -rf  index.js index.d.ts dist && tsc -p tsconfig.dev.json && browserify ./dist/demo/index.js -o ./dist/index.js",
     "server": "npm run dev && cp demo/server/test.png dist/demo/server/test.png && node dist/demo/server/index.js"
   },
   "jest": {
     "verbose": true
   },
   "name": "browser-speed-test",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "network speed test in browser with js",
   "main": "index.js",
-  "files": ["lib"],
+  "files": ["index.js", "index.d.ts"],
   "repository": "https://github.com/ShiverZheng/browser-speed-test.git",
   "author": "ShiverZheng",
   "license": "MIT",
