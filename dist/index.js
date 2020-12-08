@@ -15,7 +15,7 @@ const remoteUrl = 'https://jestjs.io/img/content/feature-fast.png';
 const localImage = 'http://localhost:3030/test.png';
 const el = document.getElementById('app');
 const tester = new index_1.default({
-    url: localImage,
+    url: remoteUrl,
     fileSize: 349738,
     onProgress: (progress) => {
         const p = `${progress.toFixed(2)}%`;
@@ -52,7 +52,7 @@ class SpeedTester {
      * Create a tester.
      * @param {object} optional - The tester config.
      * @param optional.url Links to resources such as downloaded images for testing.
-     * @param optional.fileSize When cros is disabled, we use the img tag to test, the fileSize is required.
+     * @param optional.fileSize When CROS is disabled, we use the img tag to test, the fileSize is required.
      * @param optional.testFrequency Testing frequency, default 4.
      * @param optional.onProgress The testing progress callback function.
      */

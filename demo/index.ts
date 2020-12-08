@@ -5,7 +5,7 @@ const localImage = 'http://localhost:3030/test.png';
 
 const el = document.getElementById('app');
 const tester = new SpeedTester({
-    url: localImage,
+    url: remoteUrl,
     fileSize: 349738,
     onProgress: (progress: number) => {
         const p = `${progress.toFixed(2)}%`;
