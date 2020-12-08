@@ -9,9 +9,10 @@
     "verbose": true
   },
   "name": "browser-speed-test",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "network speed test in browser with js",
   "main": "index.js",
+  "files": ["lib"],
   "repository": "https://github.com/ShiverZheng/browser-speed-test.git",
   "author": "ShiverZheng",
   "license": "MIT",
