@@ -16,7 +16,7 @@ export default class SpeedTester {
      * Create a tester.
      * @param {object} optional - The tester config.
      * @param optional.url Links to resources such as downloaded images for testing.
-     * @param optional.fileSize When CROS is disabled, we use the img tag to test, the fileSize is required.
+     * @param optional.fileSize When CORS requests is blocked, will use the img tag to test, the fileSize is required.
      * @param optional.testFrequency Testing frequency, default 4.
      * @param optional.onProgress The testing progress callback function.
      */
@@ -48,7 +48,9 @@ export default class SpeedTester {
                     }
                 };
                 if (!this.corsEnabled(this.url)) {
-                    if (!this.fileSize) throw new Error('When cros is detected, we use the img tag to test, the fileSize is required!');
+                    if (!this.fileSize) {
+                        throw new Error('When CORS requests is blocked, will use the img tag to test, the fileSize is required!');
+                    }
                     for (; i < this.testFrequency; i++) {
                         const result = await this.withImgTag(this.url, this.fileSize, onProgress);
                         results[i] = result;
