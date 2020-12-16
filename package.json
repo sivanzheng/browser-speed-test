@@ -9,7 +9,7 @@
     "verbose": true
   },
   "name": "browser-speed-test",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "network speed test in browser with js",
   "main": "index.js",
   "files": ["index.js", "index.d.ts"],
